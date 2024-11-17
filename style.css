@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hair {
+    transform-origin: top center;
+    animation-timing-function: ease-in-out;
+}
+
+#walking-other {
+    position: absolute;
+    transform-origin: top center;
+    animation-timing-function: ease-in-out;
+    animation: walk-other2 2s linear infinite;
+}
+
+
+#left-leg, #right-leg {
+    transform-origin: top center;
+    animation-timing-function: ease-in-out;
+}
+
+#right-arm {
+    transform-origin: top center;
+    animation-timing-function: ease-in-out; 
+}
+
+
+#bottom {
+    transform-origin: top center;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes walking-other2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-50deg);
+    }
+}
+
+@keyframes walking-right {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes walking-right3 {
+    from {
+        transform: translateX(0);
+        transform: rotate(1deg);
+    }
+    to {
+        transform: translateX(200px);
+        
+    }
+}
+
+
+@keyframes left-leg-move {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes walking-right-leg2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+        
+        
+    }
+}
+
+
+@keyframes right-leg-move {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+
+
+
+
+
+@keyframes hair-move {
+    0%, 100% {
+        transform: translateY(0%);
+    }
+    25% {
+        transform: rotate(0.2deg);
+    }
+    50% {
+        transform: translateY(0.5%);
+    }
+    75% {
+        transform: translateY(0%);
+        transform: rotate(0.4deg);
+    }
+}
+
+#left-leg {
+    animation: walking-right-leg2 1.5s infinite;
+}
+
+#right-leg {
+    animation: walking-right-leg2 1.5s  infinite;
+
+}
+
+#hair {
+    animation: hair-move 1.5s infinite;
+    animation: walking-right 1.5s infinite;
+}
+
+#bottom {
+    animation: walking-right  1.5s infinite;
+}
+
+
+
+#right-arm {
+    animation: walking-right3 1.5s infinite;
+}
+
+
+
+ 
+  
